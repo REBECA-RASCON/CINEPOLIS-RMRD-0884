@@ -4,14 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>cinepolis</title>
+	<!-- Conecta este HTML con el archivo de estilos -->
 	<link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
+	<!-- Encabezado con el título -->
 	<header>
 		<h1>CINEPOLIS</h1>
 	</header>
-	
+
+	<!-- Menú de navegación -->
 	<nav>
 		<a href="peliculas.html">Peliculas</a>
 		<a href="alimentos.html">Alimentos</a>
@@ -20,14 +23,15 @@
 		<a href="especiales.html">Especiales</a>
 		<a href="coleccionables.html">Coleccionables</a>
 	</nav>
-	
-	<div>
+
+	<!-- Próximos estrenos (class="contenido" = caja centrada) -->
+	<div class="contenido">
 		<h3>go! ve al cine</h3>
 		<h2>proximos estrenos</h2>
 		<dl>
 			<dt>amarte</dt>
-			<dd>comiidia, romance <br> clasificacion A <br> Duracion 96 min </dd>
-			
+			<dd>comedia, romance <br> clasificacion A <br> Duracion 96 min </dd>
+
 			<dt>aniquilacion</dt>
 			<dd> thriller, accion <br> clasificacion TBC <br> Duracion 95 min </dd>
 
@@ -35,12 +39,11 @@
 			<dd>terror, thriller <br> clasificacion C <br> Duracion 108 min </dd>
 		</dl>
 
-		
 		<h2>Cartelera</h2>
-		
 	</div>
-		
-	<div>
+
+	<!-- Imágenes de la cartelera (class="cartelera" = fila con acomodo flexible) -->
+	<div class="cartelera">
 		<img src="imagen1.jpg" alt="pelicula 1" width="200" height="300">
 		<img src="imagen2.jpg" alt="pelicula 2" width="200" height="300">
 		<img src="imagen3.jpg" alt="pelicula 3" width="200" height="300">
@@ -48,5 +51,10 @@
 		<img src="imagen5.jpg" alt="pelicula 5" width="200" height="300">
 		<img src="imagen6.jpg" alt="pelicula 6" width="200" height="300">
 	</div>
-	<a href="formulario.html">Te invitamos a ingresar a cinepolis club</a>
+
+	<!-- Pie de página con enlace al club -->
+	<footer>
+		<a href="formulario.html">Te invitamos a ingresar a cinepolis club</a>
+	</footer>
+</body>
 </html>
