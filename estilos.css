@@ -1,4 +1,4 @@
-/* ===== GENERAL: se aplica a toda la página ===== */
+/* se aplica a toda la página ===== */
 body {
   font-family: Arial, sans-serif; /* tipo de letra */
   margin: 0;                      /* quita el margen por defecto del navegador */
@@ -84,7 +84,7 @@ input[type="reset"] {             /* solo los botones */
   cursor: pointer;                /* manita al pasar el mouse */
 }
 
-/* ===== PIE DE PÁGINA Y ENLACES ===== */
+/*PIE DE PÁGINA Y ENLACES ===== */
 footer {
   text-align: center;
   padding: 20px;
