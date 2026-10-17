@@ -50,6 +50,11 @@ form {
   border-radius: 8px;             /* esquinas redondeadas */
 }
 
+footer {
+  font-family: Arial, sans-serif;
+  text-align: center;  
+}
+
 input {
   width: 100%;
   padding: 8px;
@@ -61,9 +66,4 @@ input {
 input[type="submit"],
 input[type="reset"] {
   width: auto;
-}
-
-footer {
-  font-family: Arial, sans-serif;
-  text-align: center;  
 }
