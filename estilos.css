@@ -62,3 +62,7 @@ input[type="submit"],
 input[type="reset"] {
   width: auto;
 }
+
+footer {
+  font-family: Arial, sans-serif
+}
