@@ -1,12 +1,11 @@
-/* se aplica a toda la página */
+/* Toda la página */
 body {
   font-family: Arial, sans-serif; /* tipo de letra */
-  margin: 0;                      /* quita el margen por defecto del navegador */
+  margin: 0;                      /* quita el margen del navegador */
   background-color: #f2f2f2;      /* color de fondo */
-  color: #333;                    /* color del texto */
 }
 
-/* ENCABEZADO */
+/* Encabezado */
 header {
   background-color: #003a8c;
   color: white;
@@ -14,10 +13,10 @@ header {
   padding: 20px;                  /* espacio interno */
 }
 
-/*  los enlaces quedan en fila ===== */
+/* Menú: enlaces en fila y centrados */
 nav {
-  display: flex;                  /* pone los hijos (enlaces) en fila */
-  justify-content: center;        /* los centra horizontalmente */
+  display: flex;
+  justify-content: center;
   gap: 20px;                      /* separación entre enlaces */
   background-color: #002763;
   padding: 12px;
@@ -28,82 +27,38 @@ nav a {
   text-decoration: none;          /* quita el subrayado */
 }
 
-nav a:hover {
-  color: #ffc107;                 /* cambia de color al pasar el mouse */
-}
-
-/* caja centrada con ancho máximo  */
+/* Caja de contenido centrada */
 .contenido {
   max-width: 900px;
   margin: 0 auto;                 /* auto a los lados = centrada */
   padding: 20px;
 }
 
-dt {
-  font-weight: bold;              /* negritas */
-  text-transform: capitalize;     /* primera letra en mayúscula */
-  margin-top: 12px;
-}
-
-dd {
-  margin-left: 0;                 /* quita la sangría por defecto */
-}
-
-/*imágenes en cuadrícula flexible */
+/* Imágenes de la cartelera en fila */
 .cartelera {
   display: flex;
-  flex-wrap: wrap;                /* si no caben, pasan a la siguiente fila */
+  flex-wrap: wrap;                /* si no caben, bajan de fila */
   justify-content: center;
   gap: 15px;
 }
 
-.cartelera img {
-  border-radius: 8px;             /* esquinas redondeadas */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* sombra */
-}
-
-/*FORMULARIO */
+/* Formulario */
 form {
   max-width: 350px;
-  margin: 20px auto;
   background-color: white;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 8px;             /* esquinas redondeadas */
 }
 
 input {
   width: 100%;
   padding: 8px;
-  margin: 6px 0 14px;             /* arriba, lados, abajo */
-  box-sizing: border-box;         /* el padding no agranda el ancho total */
+  margin: 6px 0 14px;
+  box-sizing: border-box;         /* el padding no agranda el ancho */
 }
 
+/* Los botones no ocupan todo el ancho */
 input[type="submit"],
-input[type="reset"] {             /* solo los botones */
+input[type="reset"] {
   width: auto;
-  cursor: pointer;                /* manita al pasar el mouse */
-}
-
-/*PIE DE PÁGINA Y ENLACES*/
-footer {
-  text-align: center;
-  padding: 20px;
-}
-
-footer a {
-  color: #003a8c;
-}
-
-/* ANCLAS INTERNAS*/
-html {
-  scroll-behavior: smooth;        /* el salto entre secciones es suave */
-}
-
-nav {
-  position: sticky;               /* el menú se queda fijo arriba al bajar */
-  top: 0;
-}
-
-section {
-  scroll-margin-top: 60px;        /* evita que el menú tape el título al saltar */
 }
