@@ -1,0 +1,95 @@
+/* ===== GENERAL: se aplica a toda la página ===== */
+body {
+  font-family: Arial, sans-serif; /* tipo de letra */
+  margin: 0;                      /* quita el margen por defecto del navegador */
+  background-color: #f2f2f2;      /* color de fondo */
+  color: #333;                    /* color del texto */
+}
+
+/* ===== ENCABEZADO ===== */
+header {
+  background-color: #003a8c;
+  color: white;
+  text-align: center;             /* centra el texto */
+  padding: 20px;                  /* espacio interno */
+}
+
+/* ===== MENÚ: los enlaces quedan en fila ===== */
+nav {
+  display: flex;                  /* pone los hijos (enlaces) en fila */
+  justify-content: center;        /* los centra horizontalmente */
+  gap: 20px;                      /* separación entre enlaces */
+  background-color: #002763;
+  padding: 12px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;          /* quita el subrayado */
+}
+
+nav a:hover {
+  color: #ffc107;                 /* cambia de color al pasar el mouse */
+}
+
+/* ===== CONTENIDO: caja centrada con ancho máximo ===== */
+.contenido {
+  max-width: 900px;
+  margin: 0 auto;                 /* auto a los lados = centrada */
+  padding: 20px;
+}
+
+dt {
+  font-weight: bold;              /* negritas */
+  text-transform: capitalize;     /* primera letra en mayúscula */
+  margin-top: 12px;
+}
+
+dd {
+  margin-left: 0;                 /* quita la sangría por defecto */
+}
+
+/* ===== CARTELERA: imágenes en cuadrícula flexible ===== */
+.cartelera {
+  display: flex;
+  flex-wrap: wrap;                /* si no caben, pasan a la siguiente fila */
+  justify-content: center;
+  gap: 15px;
+}
+
+.cartelera img {
+  border-radius: 8px;             /* esquinas redondeadas */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* sombra */
+}
+
+/* ===== FORMULARIO ===== */
+form {
+  max-width: 350px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0 14px;             /* arriba, lados, abajo */
+  box-sizing: border-box;         /* el padding no agranda el ancho total */
+}
+
+input[type="submit"],
+input[type="reset"] {             /* solo los botones */
+  width: auto;
+  cursor: pointer;                /* manita al pasar el mouse */
+}
+
+/* ===== PIE DE PÁGINA Y ENLACES ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #003a8c;
+}
