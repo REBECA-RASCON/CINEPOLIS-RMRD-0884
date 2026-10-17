@@ -14,14 +14,14 @@
 		<h1>CINEPOLIS</h1>
 	</header>
 
-	<!-- Menú de navegación -->
+	<!-- Menú: href="#" = enlace vacío "#club" salta a la sección con id="club" -->
 	<nav>
-		<a href="peliculas.html">Peliculas</a>
-		<a href="alimentos.html">Alimentos</a>
-		<a href="formulario.html">Club Cinepolis</a>
-		<a href="promos.html">Promos</a>
-		<a href="especiales.html">Especiales</a>
-		<a href="coleccionables.html">Coleccionables</a>
+		<a href="#">Peliculas</a>
+		<a href="#">Alimentos</a>
+		<a href="#club">Club Cinepolis</a>
+		<a href="#">Promos</a>
+		<a href="#">Especiales</a>
+		<a href="#">Coleccionables</a>
 	</nav>
 
 	<!-- Próximos estrenos (class="contenido" caja centrada) -->
@@ -52,10 +52,22 @@
 		<img src="imagen6.jpg" alt="pelicula 6" width="200" height="300">
 	</div>
 
-	<!-- Pie de página con enlace al club -->
-	<footer>
-		<a href="formulario.html">Te invitamos a ingresar a cinepolis club</a>
-		<p>REBECA MIRANDA RASCON DEVORA 5;J 0884</p>
-	</footer>
+	<!-- Club Cinepolis: id="club" es el destino del enlace del menú -->
+	<section id="club" class="contenido">
+		<h2>CINEPOLIS CLUB (FALSO)</h2>
+		<h3>INICIA SESION</h3>
+
+		<form action="#" method="POST">
+			<label for="Email">Email:</label>
+			<input type="email" id="Email" placeholder="maquinadosrascon@gmail.com" required>
+
+			<label for="password">Contrasena:</label>
+			<input type="password" id="password" minlength="6" maxlength="15">
+
+			<!-- borrar todo / enviar -->
+			<input type="reset">
+			<input type="submit">
+		</form>
+	</section>
 </body>
 </html>
