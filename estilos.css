@@ -64,5 +64,6 @@ input[type="reset"] {
 }
 
 footer {
-  font-family: Arial, sans-serif
+  font-family: Arial, sans-serif;
+  text-align: center;  
 }
