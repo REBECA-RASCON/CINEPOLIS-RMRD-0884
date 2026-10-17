@@ -1,4 +1,4 @@
-/* se aplica a toda la página ===== */
+/* se aplica a toda la página */
 body {
   font-family: Arial, sans-serif; /* tipo de letra */
   margin: 0;                      /* quita el margen por defecto del navegador */
@@ -6,7 +6,7 @@ body {
   color: #333;                    /* color del texto */
 }
 
-/* ===== ENCABEZADO ===== */
+/* ENCABEZADO */
 header {
   background-color: #003a8c;
   color: white;
@@ -14,7 +14,7 @@ header {
   padding: 20px;                  /* espacio interno */
 }
 
-/* ===== MENÚ: los enlaces quedan en fila ===== */
+/*  los enlaces quedan en fila ===== */
 nav {
   display: flex;                  /* pone los hijos (enlaces) en fila */
   justify-content: center;        /* los centra horizontalmente */
@@ -32,7 +32,7 @@ nav a:hover {
   color: #ffc107;                 /* cambia de color al pasar el mouse */
 }
 
-/* ===== CONTENIDO: caja centrada con ancho máximo ===== */
+/* caja centrada con ancho máximo  */
 .contenido {
   max-width: 900px;
   margin: 0 auto;                 /* auto a los lados = centrada */
@@ -49,7 +49,7 @@ dd {
   margin-left: 0;                 /* quita la sangría por defecto */
 }
 
-/* ===== CARTELERA: imágenes en cuadrícula flexible ===== */
+/*imágenes en cuadrícula flexible */
 .cartelera {
   display: flex;
   flex-wrap: wrap;                /* si no caben, pasan a la siguiente fila */
@@ -62,7 +62,7 @@ dd {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* sombra */
 }
 
-/* ===== FORMULARIO ===== */
+/*FORMULARIO */
 form {
   max-width: 350px;
   margin: 20px auto;
@@ -84,7 +84,7 @@ input[type="reset"] {             /* solo los botones */
   cursor: pointer;                /* manita al pasar el mouse */
 }
 
-/*PIE DE PÁGINA Y ENLACES ===== */
+/*PIE DE PÁGINA Y ENLACES*/
 footer {
   text-align: center;
   padding: 20px;
@@ -92,4 +92,18 @@ footer {
 
 footer a {
   color: #003a8c;
+}
+
+/* ANCLAS INTERNAS*/
+html {
+  scroll-behavior: smooth;        /* el salto entre secciones es suave */
+}
+
+nav {
+  position: sticky;               /* el menú se queda fijo arriba al bajar */
+  top: 0;
+}
+
+section {
+  scroll-margin-top: 60px;        /* evita que el menú tape el título al saltar */
 }
